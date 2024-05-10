@@ -15,7 +15,6 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return LayoutBuilder(builder: (context, constraints) {
       double spacing = constraints.maxWidth > breakpointMobile ? 150 : 40;
-      int crossAxisCount = (constraints.maxWidth / 200).floor(); // 200 é uma largura aproximada para cada ClassWidget
 
       return Scaffold(
         backgroundColor: Colors.black,
